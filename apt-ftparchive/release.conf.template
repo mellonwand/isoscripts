@@ -1,0 +1,8 @@
+APT::FTPArchive::Release::Origin "Deepin";
+APT::FTPArchive::Release::Label "Deepin";
+APT::FTPArchive::Release::Suite "DIST";
+APT::FTPArchive::Release::Version "2014.1";
+APT::FTPArchive::Release::Codename "DIST";
+APT::FTPArchive::Release::Architectures "ARCH";
+APT::FTPArchive::Release::Components "main non-free universe";
+APT::FTPArchive::Release::Description "Deepin 2014.1";

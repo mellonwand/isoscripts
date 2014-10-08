@@ -1,0 +1,25 @@
+Dir {
+  ArchiveDir "ARCHIVE_DIR";
+};
+
+TreeDefault {
+  Directory "pool/";
+};
+
+BinDirectory "pool/main" {
+  Packages "dists/DIST/main/binary-ARCH/Packages";
+  BinOverride "INDICES/override.DIST.main";
+  ExtraOverride "INDICES/override.DIST.extra.main";
+};
+
+
+Default {
+  Packages {
+    Extensions ".deb";
+    Compress ". gzip";
+  };
+};
+
+Contents {
+  Compress "gzip";
+};

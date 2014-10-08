@@ -1,0 +1,7 @@
+Task: deepin
+Section: user
+Description: deepin
+ deepin software
+Packages: list
+ deepin-movie
+

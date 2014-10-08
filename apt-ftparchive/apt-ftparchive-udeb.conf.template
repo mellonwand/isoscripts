@@ -1,0 +1,23 @@
+Dir {
+  ArchiveDir "ARCHIVE_DIR";
+};
+
+TreeDefault {
+  Directory "pool/";
+};
+
+BinDirectory "pool/main" {
+  Packages "dists/DIST/main/debian-installer/binary-ARCH/Packages";
+  BinOverride "INDICES/override.DIST.main.debian-installer";
+};
+
+Default {
+  Packages {
+    Extensions ".udeb";
+    Compress ". gzip";
+  };
+};
+
+Contents {
+  Compress "gzip";
+};

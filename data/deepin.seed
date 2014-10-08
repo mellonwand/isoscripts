@@ -1,0 +1,41 @@
+# Network
+# Disable network configuration entirely. This is useful for cdrom
+# installations on non-networked devices where the network questions,
+# warning and long timeouts are a nuisance.
+#d-i netcfg/enable boolean false
+
+# ignore error downloading key if not internet connection
+d-i apt-setup/local/key-error select Ignore
+
+# do not install recommends by default
+d-i base-installer/install-recommends boolean false
+
+# support installations from USB
+d-i cdrom-detect/try-usb boolean true
+
+# only install basic language packs
+d-i pkgsel/language-packs string
+d-i pkgsel/language-pack-patterns string
+# no language support packages
+d-i pkgsel/install-language-support boolean false
+
+# install the system-customization package
+# d-i pkgsel/include string zenbuntu-desktop
+
+# disable automatic updates, Zentyal will take care of that
+d-i pkgsel/update-policy select none
+
+# do not ask for fullname
+d-i passwd/user-fullname string
+
+# do not encrypt home folder
+d-i user-setup/encrypt-home boolean false
+
+# Package selection deepin
+tasksel tasksel/first multiselect standard, deepin
+
+d-i preseed/early_command string \
+    touch /tmp/INSTALL_MODE
+
+# deepin
+d-i preseed/late_command string /bin/sh /deepin/customize.sh
