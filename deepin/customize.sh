@@ -6,3 +6,4 @@ cp /deepin/legal /target/etc/legal
 cp /deepin/issue /target/etc/issue
 cp /deepin/issue.net /target/etc/issue.net
 cp -af /deepin/update-motd.d /target/etc/
+[ -x /usr/bin/fbterm ] && chmod u+s /usr/bin/fbterm
