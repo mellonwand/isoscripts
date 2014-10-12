@@ -1,12 +1,13 @@
 default install
+
 label install
+  menu label ^Install Deepin VERSION
+  kernel /install/vmlinuz
+  append  file=/cdrom/preseed/deepin.seed vga=788 initrd=/install/initrd.gz quiet --
+label auto
   menu label ^Install Deepin VERSION (delete all disk)
   kernel /install/vmlinuz
   append  file=/cdrom/preseed/deepin-auto.seed vga=788 initrd=/install/initrd.gz quiet --
-label expert
-  menu label ^Install Deepin VERSION (expert mode)
-  kernel /install/vmlinuz
-  append  file=/cdrom/preseed/deepin.seed vga=788 initrd=/install/initrd.gz quiet --
 #label disaster
 #  menu label ^Recover from a disaster (delete all disk)
 #  kernel /install/vmlinuz

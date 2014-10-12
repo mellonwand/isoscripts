@@ -1,4 +1,8 @@
 linux-image-generic
 grub-efi
 tasksel
-deepin-movie
+bash
+fbterm
+ssh
+fonts-wqy-microhei
+fonts-wqy-zenhei

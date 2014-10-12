@@ -52,14 +52,14 @@ d-i passwd/root-login boolean false
 #d-i passwd/make-user boolean false
 
 # To create a normal user account.
-d-i passwd/user-fullname deepin
-d-i passwd/username string deepin
+#d-i passwd/user-fullname deepin
+#d-i passwd/username string deepin
 # Normal user's password, either in clear text
-d-i passwd/user-password password deepin
-d-i passwd/user-password-again password deepin
+#d-i passwd/user-password password deepin
+#d-i passwd/user-password-again password deepin
 # The installer will warn about weak passwords. If you are sure you know
 # what you're doing and want to override it, uncomment this.
-d-i user-setup/allow-password-weak boolean true
+#d-i user-setup/allow-password-weak boolean true
 
 # The user account will be added to some standard initial groups. To
 # override that, use this.
@@ -103,7 +103,7 @@ d-i partman/confirm boolean true
 # using a known gpg key. This setting can be used to disable that
 # authentication. Warning: Insecure, not recommended.
 d-i debian-installer/allow_unauthenticated boolean true
-d-i apt-setup/local0/repository string http://packages.linuxdeepin.com/deepin trusty main extra
+#d-i apt-setup/local0/repository string http://packages.linuxdeepin.com/deepin trusty main extra
 
 ### Package selection
 tasksel tasksel/first multiselect standard, deepin
