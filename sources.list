@@ -1,3 +1,8 @@
 deb http://packages.linuxdeepin.com/ubuntu trusty main restricted universe multiverse
 deb http://packages.linuxdeepin.com/ubuntu trusty-updates main restricted universe multiverse
 deb http://packages.linuxdeepin.com/ubuntu trusty-security main restricted universe multiverse
+<<<<<<< HEAD
+=======
+#FIXME GPG key error when update
+#deb http://packages.linuxdeepin.com/deepin trusty main universe non-free
+>>>>>>> a0823b7bc3c6756d5e3c1786edb92bcd3c882b35

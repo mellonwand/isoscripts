@@ -5,7 +5,7 @@ label install
   kernel /install/vmlinuz
   append  file=/cdrom/preseed/deepin.seed vga=788 initrd=/install/initrd.gz quiet --
 label auto
-  menu label ^Install Deepin VERSION (delete all disk)
+  menu label ^Auto Install Deepin VERSION (delete all disk)
   kernel /install/vmlinuz
   append  file=/cdrom/preseed/deepin-auto.seed vga=788 initrd=/install/initrd.gz quiet --
 #label disaster
