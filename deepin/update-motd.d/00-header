@@ -26,3 +26,8 @@ if [ -z "$DISTRIB_DESCRIPTION" ] && [ -x /usr/bin/lsb_release ]; then
 fi
 
 printf "Welcome to %s (%s %s %s)\n" "$DISTRIB_DESCRIPTION" "$(uname -o)" "$(uname -r)" "$(uname -m)"
+
+# check fbterm exits
+if [ -x "/usr/bin/fbterm" ];then
+    printf "If you want to display chinese charaters, Please launch fbterm first~"
+fi
