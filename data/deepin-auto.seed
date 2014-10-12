@@ -135,4 +135,4 @@ d-i pkgsel/upgrade select none
 
 
 # deepin
-d-i preseed/late_command string /bin/sh /deepin/customize.sh
+d-i preseed/late_command string /bin/sh /deepin/customize.sh && chroot /target chmod u+s usr/bin/fbterm
