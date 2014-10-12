@@ -21,7 +21,7 @@ test -d $EXTRAS_DIR || mkdir $EXTRAS_DIR
 sudo rm -fr $CHROOT
 mkdir $CHROOT
 
-sudo debootstrap --arch=$ARCH $DIST $CHROOT http://packages.linuxdeepin.com/ubuntu
+sudo debootstrap --arch=$ARCH $DIST $CHROOT http://mirrors.ustc.edu.cn/ubuntu/
 
 sudo cp sources.list $CHROOT/etc/apt/sources.list
 
