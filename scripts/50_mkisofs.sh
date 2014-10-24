@@ -15,5 +15,6 @@ mkisofs -r -V "Deepin $VERSION $ARCH" \
             -o $ISO_IMAGE $CD_BUILD_DIR
 
 pushd $BASE_DIR
+isohybrid $(basename $ISO_IMAGE)
 md5sum $(basename $ISO_IMAGE) > $ISO_IMAGE.md5
 popd
