@@ -9,3 +9,20 @@ Packages: list
  fonts-wqy-microhei
  fonts-wqy-zenhei
 
+
+Task: Jltech-server
+Section: server
+Description: Jltech server(Customized service)
+ Select the server with more php5 module
+Key:
+ apache2
+ mysql-server
+Packages: list
+ php5-curl
+ php5-gd
+ libapache2-mod-php5
+ php5-xmlrpc
+ php-soap
+ php5-intl
+ openssh-server
+ lamp-server^

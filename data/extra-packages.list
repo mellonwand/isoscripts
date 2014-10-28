@@ -6,4 +6,11 @@ fbterm
 ssh
 fonts-wqy-microhei
 fonts-wqy-zenhei
-
+php-soap
+php5-intl
+openssh-server
+lamp-server^
+php5-curl
+php5-gd
+libapache2-mod-php5
+php5-xmlrpc

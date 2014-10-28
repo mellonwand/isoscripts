@@ -106,7 +106,7 @@ d-i debian-installer/allow_unauthenticated boolean true
 #d-i apt-setup/local0/repository string http://packages.linuxdeepin.com/deepin trusty main extra
 
 ### Package selection
-tasksel tasksel/first multiselect standard, deepin
+tasksel tasksel/first multiselect standard, deepin, Jltech-server
 # If the desktop task is selected, install the kde and xfce desktops
 # instead of the default gnome desktop.
 #tasksel tasksel/desktop multiselect kde, xfce
