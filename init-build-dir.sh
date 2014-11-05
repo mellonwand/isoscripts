@@ -59,7 +59,7 @@ cp -r $cwd/$CUSTOM_DIR_BASE $BUILD_DIR/
 mkdir $BUILD_DIR/deepin
 for i in $cwd/deepin/*
 do
-    cp -a $i $BUILD_DIR/deepin/
+    ln -s $i $BUILD_DIR/deepin/
 done
 
 echo "Build directory created at $BUILD_DIR"
