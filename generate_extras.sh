@@ -16,20 +16,20 @@ fi
 EXTRAS_DIR="$EXTRAS_DIR_BASE-$ARCH"
 CHROOT="$CHROOT_BASE-$ARCH"
 
-# test -d $EXTRAS_DIR || mkdir $EXTRAS_DIR
+test -d $EXTRAS_DIR || mkdir $EXTRAS_DIR
 
-# sudo rm -fr $CHROOT
-# mkdir $CHROOT
+sudo rm -fr $CHROOT
+mkdir $CHROOT
 
-# sudo debootstrap --arch=$ARCH $DIST $CHROOT http://packages.linuxdeepin.com/ubuntu/
+sudo debootstrap --arch=$ARCH $DIST $CHROOT http://packages.linuxdeepin.com/ubuntu/
 
-# sudo cp sources.list $CHROOT/etc/apt/sources.list
+sudo cp sources.list $CHROOT/etc/apt/sources.list
 
-# sudo chroot $CHROOT apt-get update
+sudo chroot $CHROOT apt-get update
 
-# test -r data/extra-packages.list || exit 1
-# cp data/extra-packages.list /tmp/extra-packages.list
-# cat /tmp/extra-packages.list | xargs sudo chroot $CHROOT apt-get install --download-only --no-install-recommends --allow-unauthenticated --yes
-# rm /tmp/extra-packages.list
+test -r data/extra-packages.list || exit 1
+cp data/extra-packages.list /tmp/extra-packages.list
+cat /tmp/extra-packages.list | xargs sudo chroot $CHROOT apt-get install --download-only --no-install-recommends --allow-unauthenticated --yes
+rm /tmp/extra-packages.list
 
-# cp $CHROOT/var/cache/apt/archives/*.deb $EXTRAS_DIR/
+cp $CHROOT/var/cache/apt/archives/*.deb $EXTRAS_DIR/
