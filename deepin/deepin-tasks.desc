@@ -8,7 +8,7 @@ Packages: list
  ssh
  fonts-wqy-microhei
  fonts-wqy-zenhei
- php5-mysql
+
 
 Task: Jltech-server
 Section: server
@@ -50,3 +50,4 @@ Packages: list
  libdbd-mysql-perl
  tcpd
  libdbi-perl
+ php5-mysql
