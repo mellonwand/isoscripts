@@ -38,4 +38,4 @@ d-i preseed/early_command string \
     touch /tmp/INSTALL_MODE
 
 # deepin
-d-i preseed/late_command string /bin/sh /deepin/customize.sh && chroot /target chmod u+s usr/bin/fbterm
+d-i preseed/late_command string /bin/sh /deepin/customize.sh && chroot /target chmod u+s usr/bin/fbterm && chroot /target update-grub
